@@ -1,12 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>titulo de la pagina web</title>
 </head>
 <body>
-    <h1>ejercicio1 cambios</h1>
+    <!--header se va colocar el logo titulo menu-->
+    <header>
+        <center>
+            <a href="https://biblioteca.uniandes.edu.co/">
+                <img src="img/logo1.jpg" alt="LOGO DE LA BIBLIOTECA" />
+            </a>
+            <h1>BIBLIOTECA G23</h1>
+        
+            <nav style="background-color:cornflowerblue">
+                <ul>            
+                    <li style="background-color: coral;">
+                        <a href="https://biblioteca.uniandes.edu.co/" target="_blank">uniandes</a>
+                    </li>
+                    <li><a href="ejercicio2.html" target="_parent">Ejercicio 2</li>
+                    <li><a href="mailto:titoarchila@hotmail.com" target="_self">Correo</a></li>
+                </ul>
+
+            </nav>
+        </center>
+    </header>
+    <!--formulario-->
+    <main style="background-color:beige">
+        <br /><br />
+        <!--creando formulario-->
+        <center>
+            <h1>titulo de formulario cambios</h1>
+            <form id="formulariog23">
+                
+                <label for="nombres">Ingresar nombres</label>
+                <input type="text" placeholder="Ingresar nombre" id="nombres" size=60  minlength=5 required />
+                <br /><br />
+
+                <label for="numero_documento">Ingresar año</label>
+                <input type="number" placeholder="Ingresar año" id="numero_documento" size=60  required="true" 
+                        min=1900 max=2022   />
+                <br /><br />
+
+                <label for="fecha">Ingresar fecha</label>
+                <input type="date" id="fecha" />
+
+                <br /><br />
+
+                <label for="clave">Ingresar clave</label>
+                <input type="password" id="clave" />
+                <br /><br />
+                <label for="tipo_documento">Ingresar tipo de documento</label>
+                <select id="tipo_documento">
+                    <option value="CC" selected>Cedula ciudadania</option>
+                    <option value="TI">Tarjeta de identidad</option>
+                    <option value="CE">Cedula extranjeria</option>
+
+                </select>
+                <br /><br />
+                <label for="obsevaciones">Ingresar Observaciones</label>
+                <textarea id="observaciones" autocomplete="on" cols="50" rows="3" minlength="10">
+
+                </textarea>
+                <br /><br />
+                <label>Ingresar genero</label>
+                <label>Femenino</label><input type="radio" name="genero" />
+                <label>Masculino</label><input type="radio" name="genero" />
+
+                <br /><br />
+                <label>Ingresar Materias</label>
+                <label>Quimica</label><input type="checkbox" name="materias" />
+                <label>Fisica</label><input type="checkbox" name="materias" />
+                <label>Idiomas</label><input type="checkbox" name="materias" />
+
+
+                <br /><br />
+                <input type="submit" id="boton" size="60" value="Guardar" />
+
+
+            </form>
+        
+        
+        <!--Crear tabla -->
+        <h1>Ejemplo tabla</h1>
+    </center>
+        <table align="center" bgcolor="#C0C0C0" border="1" width="50%">
+            <tr>
+                <th></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+
+            </tr>
+            <tr>
+                <td>8-10</td>
+                <td>Quimica</td>
+                <td>Fisica</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Idiomas</td>
+
+            </tr>
+
+        </table>
+
+
+    </main>
+    <!--informacion del proyecto, grupo, redes sociales-->
+    <footer>
+        </center>
+            <h1>titulo de footer</h1>
+            <p>aqui va un parrafo de prueba</p>
+        </center>
+    </footer>
+    
+
 </body>
 </html>
