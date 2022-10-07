@@ -1,0 +1,271 @@
+body{
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    font-family: 'Mulish', sans-serif;
+
+}
+
+
+label{
+    width: 200px;
+    display: inline-block;
+}
+
+table{
+    width: 90%;
+}
+
+.estilo1{
+    width: 300px;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+
+#caja1{
+    width: 300px;
+    height: 200px;
+    background-color:cadetblue;
+
+}
+
+.caja-header{
+    width: 100%;
+    height: 200px;
+    /*background-color: deepskyblue;*/
+
+}
+
+
+#caja-logo{
+    width: 50%;
+    height: 150px;
+    /*background-color: coral;*/
+    float: inline-start;
+    position: relative;    
+}
+
+#caja-logo img{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+#caja-titulo{
+    width: 50%;
+    height: 150px;
+   /* background-color: crimson;*/
+    float:inline-start;
+    text-align: left;
+
+}
+
+#caja-titulo h1{
+    line-height: 110px;
+}
+
+#caja-menu{
+    width: 50%;
+    height: 50px;
+    /*background-color: darkorchid;*/
+    float:inline-start;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+
+
+ul li{
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    background-color:coral;
+    /*color:crimson;*/
+    padding-top: 15px;
+
+    
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+ul li a:hover{
+    color:crimson;
+    text-decoration:underline;
+    font-size: 16px;
+}
+
+/*
+.menu1{
+    color:crimson; 
+}*/
+
+
+form{
+    width: 50%;
+    
+    /*background-color: rgb(0, 128, 128);*/
+    text-align: left;
+
+}
+
+.label1{
+    width: 20%;
+}
+
+.input-form{
+    width: 70%;
+}
+
+.boton-formulario{
+    width: 49%;
+    height: 30px;
+    background-color: #FF5733;
+    color:#FFC300;
+    border: none;
+}
+
+.boton-formulario:hover{
+    color: #C70039;
+    text-decoration:underline;
+}
+
+.tabla{
+    width: 70%;
+    background-color:#fff;
+    border: 1px solid #000;
+
+
+}
+
+th{
+    background-color: gainsboro;
+    
+}
+
+td, th{
+    border: none;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #FFC300;
+
+}
+
+.caja1{
+    width: 33%;
+    height: 300px;
+    background-color: brown;
+    float:left;
+    text-align: center;
+}
+
+.caja2{
+    width: 33%;
+    height: 300px;
+    background-color:coral;
+    float:left;
+}
+
+.caja3{
+    width: 33%;
+    height: 300px;
+    background-color:cornflowerblue;
+    float:left;   
+}
+
+@media screen and (max-width: 640px){
+    #caja-logo{
+        width: 100%;
+        /*background-color: coral;*/
+    }
+
+
+    #caja-logo img{
+        left: 50%;
+    }
+    
+    #caja-titulo{
+        width: 100%;
+        height: 100px;
+        /*background-color: crimson;*/
+        text-align: center;
+    
+    }
+    
+    #caja-menu{
+        width: 100%;
+        height: 220px;
+        /*background-color: darkorchid;*/
+        float:inline-start;
+        margin-left: 0%;
+        margin-right: 0%;
+        
+    }
+    
+    ul li{
+        display: inline-block;
+        width: 100%;
+        
+        background-color:#C70039;
+        color: white;
+
+        padding-top: 10px;
+        margin-left: -30px;
+
+        margin-bottom: 10px;
+    }
+
+    ul li a:hover{
+        color:#000;
+
+    }
+
+    form{
+        width: 100%;
+        
+        text-align: left;
+    
+    }
+    
+    .input-form{
+        width: 100%;
+    }
+    .label1{
+        width: 50%;
+    }
+    
+    .boton-formulario{
+        width: 100%;
+
+        background-color: #C70039;
+        color:#fff;
+        margin-bottom: 10px;
+    }
+    
+    .boton-formulario:hover{
+        color: #000;
+
+    }
+    .tabla{
+        width: 100%;
+        font-size: 11px;
+    }
+    
+    th{
+        font-size: 11px;
+    }
+    
+    td, th{
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo bootstrap</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="css/estilo_boostrap.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat+Alternates:wght@300&family=Mulish:wght@300&display=swap" rel="stylesheet" />
+
+    
+
+</head>
+<body>
+    
+    <header class="container" onclick="alert('dio clic sobre header')">
+        <div class="row">
+            <div class="caja1 col-12 col-md-6">
+                <a href="https://biblioteca.uniandes.edu.co/">
+                    <img src="img/logo1.jpg" alt="LOGO DE LA BIBLIOTECA" />
+                </a>
+            </div>
+            <div class="caja2 col-12 col-md-6">
+                <h1>BIBLIOTECA</h1>
+            </div>
+            <div class="caja3 col-12 col-md-12">
+                <nav class="navbar navbar-dark bg-primary">
+                    <ul>            
+                        <li>
+                            <a href="https://biblioteca.uniandes.edu.co/" target="_blank">Uniandes</a>
+                        </li>
+                        <li><a href="ejercicio2.html" target="_parent">Ejercicio 2</li>
+                        <li><a href="mailto:titoarchila@hotmail.com" target="_self">Correo</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <br /><br />
+    
+    <main class="container">
+        <div class="row">
+            <br /><br />
+            <!--creando formulario-->
+                
+                <div class="formulario1 col-0 col-md-2"></div>
+                <form class="col-12 col-md-8" onsubmit="return false" >
+                    <h1 style="text-align:center">Calculadora</h1>
+                    <label class="form-label" for="nombres">Numero 1</label>
+                    <input class="form-control" type="number" id="numero1" />
+                    <p id="parrafo_validar1"></p>
+
+                    <label class="form-label"  for="numero_documento">Numero 2</label>
+                    <input class="form-control" type="number" id="numero2" />
+                    <div id="div_validar2"></div>
+                    
+                    
+
+
+                    <br /><br />
+                    <input class="botones-formulario btn btn-danger" type="submit" id="boton" onclick="realizar_operaciones_matematicas()" value="Calcular" />
+                    <input class="botones-formulario btn btn-danger" type="submit" id="boton" value="Cancelar" />
+
+                    <br /><br /><br /><br />
+                </form>
+            
+                <div id="resultado_suma" class="p-3 mb-2 bg-warning text-dark"></div>
+                <div id="resultado_resta" class="p-3 mb-2 bg-info text-white"></div>
+                <div id="resultado_multiplicacion" class="p-3 mb-2 bg-light text-dark" name="caja_multiplicacion"></div>
+
+                <!--crear una caja en este punto-->
+
+
+
+
+                <!--crear etiqueta h5 en javascript en la caja-uno-->
+
+            
+                <!--<p>parrafo1</p>
+                <p>parrafo2</p>
+                <p>parrafo3</p>
+                <p>parrafo4</p>
+                <p>parrafo5</p>-->
+            <!--Crear tabla -->
+        </div>
+
+    </main>
+
+    <br /><br />            <br /><br />  
+    
+    <div id="caja-uno">
+        <h3>titulo 3</h3>
+    </div>
+
+   
+
+    
+    <br /><br />            <br /><br />
+    <script src="js/calculadora.js"></script>
+
+    
+</body>
+</html>
